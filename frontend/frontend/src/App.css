@@ -1,0 +1,92 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #222;
+  color: #d4d4cd;
+  border: 1px solid;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 20px 0;
+}
+
+thead {
+  background: linear-gradient(to right, #20232a, #282c34);
+}
+
+th {
+  padding: 16px 20px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.1em;
+  border-bottom: 2px solid #61dafb;
+}
+
+tbody tr {
+  border-bottom: 1px solid #f1f3f5;
+  transition: background-color 0.2s;
+
+  &:hover{
+    background-color: #111;
+  }
+}
+
+td {
+  padding: 15px 20px;
+}
+
+button{
+  border: none;
+  font-size: 1.5em;
+  background-color: transparent;
+  color: #d4d4cd;
+  transition: .5s;
+
+  &:hover{
+    color: #e9e9e2;
+  }
+}
+
+input {
+  background-color: #20232a;
+  color: #d4d4cd;
+  border-radius: 5px;
+  border: 1px solid darkslategray;
+  padding: 4px 10px;
+  font-size: 1.1em;
+  box-sizing: border-box;
+  margin: 0 5px;
+  transition: .5s;
+
+  &:hover{
+    background-color: #131418;
+    color: #e9e9e2;
+  }
+}
+
+@media (max-width: 768px) {
+  table {
+    font-size: 0.9em;
+  }
+  
+  th, td {
+    padding: 10px 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  table {
+    font-size: 0.85em;
+  }
+  
+  th, td {
+    padding: 8px 10px;
+  }
+}
